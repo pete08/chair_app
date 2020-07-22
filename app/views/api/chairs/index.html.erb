@@ -1,0 +1,19 @@
+<html>
+<body>
+
+<div>
+Welcome! See all my chairs for sale: <br><br>
+</div>
+
+<div>
+<% @chairs.map do |chair| %>
+  <br><br>
+  Chair: <%= chair.id %><br>
+  Color: <%= chair.color %><br>
+  Weight: <%= chair.weight %>
+<% end %>
+</div>
+
+
+</body>
+</html>
