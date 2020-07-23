@@ -8,12 +8,17 @@ Welcome! See all my chairs for sale: <br><br>
 <div>
 <% @chairs.map do |chair| %>
   <br><br>
-  Chair: <a href = "/api/chairs/<%= chair.id %>" ><%= chair.id %></a><br>
+  Chair ID: <a href = "/api/chairs/<%= chair.id %>" ><%= chair.id %></a><br>
   Color: <%= chair.color %><br>
-  Weight: <%= chair.weight %>
+  Weight: <%= chair.weight %><br>
+  Style: <%= chair.style %><br>
 <% end %>
 </div>
-
+<div>
+<form action = "/api/chairs/new" method = "get">
+  <p><input type = "submit" value = "Create a new chair here!"></p>
+</form>
+</div>
 
 </body>
 </html>

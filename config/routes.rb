@@ -17,5 +17,7 @@ Rails.application.routes.draw do
 
     get "/chairs/:id/edit" => "chairs#edit"
     patch "/chairs/:id" => "chairs#update"
+
+    delete "/chairs/:id" => "chairs#destroy"
   end
 end

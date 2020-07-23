@@ -9,8 +9,13 @@
   <p>legs: <input type = "integer" name = "legs" value = "<%= @chair.legs%>"> </p>
   <p>style: <input type = "text" name = "style" value = "<%= @chair.style%>"> </p>
 
-  <input type = "submit" value = "button to submit changes!">
+  <p><input type = "submit" value = "button to submit changes!"></p>
 
   
 
+</form>
+
+<form action ="/api/chairs/<%= @chair.id %>" method = "post">
+  <input type = "hidden" name = "_method" value = "delete">
+  <input type = "submit" value = "button to DELETE Chair!">
 </form>

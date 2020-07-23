@@ -43,5 +43,11 @@ class Api::ChairsController < ApplicationController
     redirect_to "/api/chairs"
   end
 
+  def destroy
+    @chair = Chair.find_by(id: params[:id])
+    @chair.destroy
+    
+    redirect_to "/api/chairs"
+  end
 
 end

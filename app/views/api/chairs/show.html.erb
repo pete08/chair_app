@@ -2,9 +2,10 @@
   <p>hello this is the product you searched for:</p>
   <br>
 
-  <p>Chair: <%= @chair.id %></p><br>
-  <p>Color: <%= @chair.color %></p><br>
+  <p>Chair ID: <%= @chair.id %></p>
+  <p>Color: <%= @chair.color %></p>
   <p>Weight: <%= @chair.weight %></p>
+  <p>style: <%= @chair.style %></p>
 
 
   <p><a href="/api/chairs/<%= @chair.id %>/edit">Edit this chair</a></p>
