@@ -1,0 +1,16 @@
+<p> Edit the Chair here!</p>
+
+
+<form action = "/api/chairs/<%= @chair.id %>" method = "post">
+  <input type = "hidden" name = "_method" value = "patch">
+
+  <p>color: <input type = "text" name = "color" value = "<%= @chair.color%>"> </p>
+  <p>weight: <input type = "integer" name = "weight" value = "<%= @chair.weight%>"> </p>
+  <p>legs: <input type = "integer" name = "legs" value = "<%= @chair.legs%>"> </p>
+  <p>style: <input type = "text" name = "style" value = "<%= @chair.style%>"> </p>
+
+  <input type = "submit" value = "button to submit changes!">
+
+  
+
+</form>

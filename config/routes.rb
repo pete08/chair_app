@@ -10,5 +10,12 @@ Rails.application.routes.draw do
 
   namespace :api do
     get "/chairs" => "chairs#index"
+    get "/chairs/new" => "chairs#new"
+    get "/chairs/:id" => "chairs#show"
+
+    post "/chairs" => "chairs#create"
+
+    get "/chairs/:id/edit" => "chairs#edit"
+    patch "/chairs/:id" => "chairs#update"
   end
 end
